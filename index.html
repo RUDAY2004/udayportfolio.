@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(0, 0, 35);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 78);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(158, 158, 232);
+            font-size: 1.02rem;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+        .firstsection>div {
+            width: 40%;
+        }
+        .leftsection {
+            font-size: 2.5rem;
+        }
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(172, 120, 220);
+        }
+
+        #element {
+            color: rgb(172, 120, 220);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .centerdiv{
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 30px;
+            color: aliceblue;
+            width: 100%;
+        a{
+            color: white;
+            height: 0px;
+            width: 70px;
+            background-color: rgb(172, 120, 220);
+            border-radius: 30px;
+            text-align: center;
+            transition: all 0.3s linear;
+        }
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">R Uday Sri Kumar's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, This is <span class="purple">Uday Sri Kumar</span>
+                <div>Tech Explorer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+
+            </div>
+        </section>
+        <section class="secondsection">
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['A Tech Maven in the Making!'],
+            typeSpeed: 50,
+        });
+    </script>
+    <div class="centerdiv">
+        <a href="https://www.instagram.com/urs_udaysrikumar9/">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="https://twitter.com/RUdaySriKumar1">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.facebook.com/ravilla.udaysrikumar.1/">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/r-uday-sri-kumar-359419257/">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+        </div>
+</body>
+</html>
